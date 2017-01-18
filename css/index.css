@@ -211,8 +211,8 @@ body{
 .lock .lock-password input{
 	display: inline-block;
 	text-align: center;
-	line-height: 2.5rem;
-	font-size: 1.8rem;
+	line-height: 1.6rem;
+	font-size: 1.6rem;
 	width: 1.6rem;
 	height: 1.6rem;
 	border:1px solid #555559;
@@ -243,7 +243,6 @@ body{
 .lock-num{
 	position: absolute;
 	width: 90%;
-	height: 100%;
 	top: 25%;
 	left: 50%;
 	transform: translateX(-50%);
@@ -387,7 +386,7 @@ body{
 
 	/*--------解锁页面-----------*/
 	.lock .lock-password{
-		top:3.5rem;
+		top:3rem;
 	}
 	.lock .lock-password p{
 		font-size: 2.4rem;
@@ -397,9 +396,10 @@ body{
 		margin: 1rem auto;
 	}
 	.lock .lock-password input{
-		font-size: 1.8rem;
+		font-size: 1.3rem;
 		width: 1.3rem;
 		height: 1.3rem;
+		line-height: 1.3rem;
 	}
 	.lock-tips{
 		font-size: 1.3rem !important;
