@@ -83,6 +83,7 @@ body{
 	margin: 0 auto;
 	padding-left: 1rem;
 	animation: footer-lock 1.5s infinite;
+	-webkit-animation: footer-lock 1.5s infinite;
 }
 @keyframes  footer-lock{
 	from{
@@ -110,6 +111,7 @@ body{
 .page1-footer-icon i{
 	display: inline-block;
 	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
 	position: absolute;
 	right:0.2rem;
 	bottom: 0.6rem;
@@ -164,6 +166,7 @@ body{
 }
 .wx-msg ul li + li i{
 	transform: scale(0.9);
+	-webkit-transform: scale(0.9);
 }
 .wx-msg ul li + li p{
 	font-size: 1.5rem;
@@ -186,9 +189,12 @@ body{
 	position: relative;
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
 	background: #202125;
 	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
 }
 /*-----密码框------*/
 .lock .lock-password{
@@ -211,8 +217,8 @@ body{
 .lock .lock-password input{
 	display: inline-block;
 	text-align: center;
-	line-height: 2.5rem;
-	font-size: 1.8rem;
+	line-height: 1.6rem;
+	font-size: 1.6rem;
 	width: 1.6rem;
 	height: 1.6rem;
 	border:1px solid #555559;
@@ -228,25 +234,26 @@ body{
 }
 .lock-tips-move{
 	animation: move 0.5s ;
+	-webkit-animation: move 0.5s ;
 }
 @keyframes move{
-	0% {transform:translateX(-0.8rem);}
-	20% {transform:translateX(0.8rem);}
-	30% {transform: translateX(-1.2rem);}
-	40% {transform: translateX(1.2rem);}
-	60% {transform: translateX(-1.5rem);}
-	80% {transform: translateX(1.5rem);}
-	100% {transform: translateX(0rem);}
+	0% {transform:translateX(-0.8rem);-webkit-transform:translateX(-0.8rem);}
+	20% {transform:translateX(0.8rem);-webkit-transform:translateX(0.8rem);}
+	30% {transform: translateX(-1.2rem);-webkit-transform: translateX(-1.2rem);}
+	40% {transform: translateX(1.2rem);-webkit-transform: translateX(1.2rem);}
+	60% {transform: translateX(-1.5rem);-webkit-transform: translateX(-1.5rem);}
+	80% {transform: translateX(1.5rem);-webkit-transform: translateX(1.5rem);}
+	100% {transform: translateX(0rem);-webkit-transform: translateX(0rem);}
 }
 
 /*-----九个数字------*/
 .lock-num{
 	position: absolute;
 	width: 90%;
-	height: 100%;
 	top: 25%;
 	left: 50%;
 	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
 	text-align: center;
 }
 .lock-num ul{
@@ -338,7 +345,9 @@ body{
 	left: 0;
 	right: 0;
 	transform: scale(0);
+	-webkit-transform: scale(0);
 	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
 }
 
 @media screen and (min-width: 320px) and (max-width: 360px) {
@@ -380,6 +389,7 @@ body{
 	}
 	.page1-footer-icon i{
 		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
 	}
 	.page1-footer .page1-footer-lock{
 		font-size: 2rem;
@@ -387,7 +397,7 @@ body{
 
 	/*--------解锁页面-----------*/
 	.lock .lock-password{
-		top:3.5rem;
+		top:3rem;
 	}
 	.lock .lock-password p{
 		font-size: 2.4rem;
@@ -397,9 +407,10 @@ body{
 		margin: 1rem auto;
 	}
 	.lock .lock-password input{
-		font-size: 1.8rem;
+		font-size: 1.3rem;
 		width: 1.3rem;
 		height: 1.3rem;
+		line-height: 1.3rem;
 	}
 	.lock-tips{
 		font-size: 1.3rem !important;
@@ -421,6 +432,7 @@ body{
 		bottom: -1.3rem;
 		left:1.4rem;
 		transform: scale(0.8);
+		-webkit-transform: scale(0.8);
 	}
 	.lock-num ul li:nth-of-type(7):after{
 		left:1rem;
@@ -430,6 +442,7 @@ body{
 	}
 	.lock-num ul li:last-child{
 		transform: translateX(-28%);
+		-webkit-transform: translateX(-28%);
 		line-height: 5.3rem;
 	}
 	.lock span{
@@ -470,6 +483,7 @@ body{
 		bottom: -1.5rem;
 		left:1.8rem;
 		transform: scale(0.8);
+		-webkit-transform: scale(0.8);
 	}
 	.lock-num ul li:nth-of-type(7):after{
 		left:1.2rem;
@@ -479,6 +493,7 @@ body{
 	}
 	.lock-num ul li:last-child{
 		transform: translateX(-17%);
+		-webkit-transform: translateX(-17%);
 		line-height: 6rem;
 	}
 	.lock span{
