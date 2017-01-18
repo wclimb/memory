@@ -45,7 +45,7 @@
 					var home=document.querySelector('.main-home');
 					var lock=document.querySelector('.lock');
 					lock.style.display='none';
-					home.style.transform='scale(1)';
+					home.style.webkitTransform='scale(1)';
 				},500)
 			}
 			else if(psd.length==4){
@@ -146,11 +146,11 @@
                   case 3:  
                         
                         var lock=document.querySelector('.lock');
-                     	lock.style.transform="translateX(-100%)"
+                     	lock.style.webkitTransform="translateX(-100%)"
                       break;  
                   case 4:  
                      var lock=document.querySelector('.lock');
-                     	lock.style.transform="translateX(0)";
+                     	lock.style.webkitTransform="translateX(0)";
                       break;  
                   default:             
               }  
