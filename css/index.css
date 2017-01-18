@@ -87,7 +87,7 @@ body{
 	animation: footer-lock 1.5s infinite;
 	-webkit-animation: footer-lock 1.5s infinite;
 }
-@keyframes  footer-lock{
+-webkit-@keyframes  footer-lock{
 	from{
 		opacity: 0.4;
 	}
@@ -239,7 +239,7 @@ body{
 	animation: move 0.5s ;
 	-webkit-animation: move 0.5s ;
 }
-@keyframes move{
+-webkit-@keyframes move{
 	0% {transform:translateX(-0.8rem);-webkit-transform:translateX(-0.8rem);}
 	20% {transform:translateX(0.8rem);-webkit-transform:translateX(0.8rem);}
 	30% {transform: translateX(-1.2rem);-webkit-transform: translateX(-1.2rem);}
