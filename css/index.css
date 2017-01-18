@@ -32,6 +32,9 @@ body{
 	background: #202125;
 	color: #fff;
 }
+#show-1{
+	display:none;
+}
 .page1 .time{
 	position: absolute;
 	top:0.4rem;
