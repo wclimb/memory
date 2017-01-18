@@ -96,7 +96,7 @@ body{
 		opacity: 1;
 	}
 }
--webkit-@keyframes  footer-lock{
+@-webkit-keyframes  footer-lock{
 	from{
 		opacity: 0.4;
 	}
@@ -107,9 +107,9 @@ body{
 .page1-footer .page1-footer-lock:before{
 	position: absolute;
 	content: '›';
-	transform: scale(1.2);
-	-webkit-transform: scale(1.2);
-	left: -0.6rem;
+	transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	left: 0;
 }
 .page1-footer-icon span{
 	position: relative;
@@ -258,7 +258,7 @@ body{
 	80% {transform: translateX(1.5rem);-webkit-transform: translateX(1.5rem);}
 	100% {transform: translateX(0rem);-webkit-transform: translateX(0rem);}
 }
--webkit-@keyframes move{
+@-webkit-keyframes move{
 	0% {transform:translateX(-0.8rem);-webkit-transform:translateX(-0.8rem);}
 	20% {transform:translateX(0.8rem);-webkit-transform:translateX(0.8rem);}
 	30% {transform: translateX(-1.2rem);-webkit-transform: translateX(-1.2rem);}
@@ -441,15 +441,15 @@ body{
 		margin: 0.6rem auto;
 	}
 	.lock .lock-password input{
-		font-size: 1.3rem;
-		width: 1.3rem;
-		height: 1.3rem;
-		line-height: 1.3rem;
+		font-size: 1.4rem;
+		width: 1.5rem;
+		height: 1.5rem;
+		line-height: 1.5rem;
 	}
 	.lock-tips{
-		font-size: 1.3rem !important;
+		font-size: 1.2rem !important;
 		margin-top: -0.7rem;
-		opacity: 0.7;
+		opacity: 0.5;
 	}
 	.lock-num-ul{
 		margin: 32% auto;
@@ -505,9 +505,6 @@ body{
 		font-size: 1.5rem !important;
 		margin-top: -0.7rem;
 	}
-     .lock-num-ul{
-		width: 82%;
-	}
 	.lock-num-ul li{
 		width:7rem;
 		height:7rem;
@@ -542,7 +539,7 @@ body{
     .lock-num-ul{
 		width:27rem; 
 		height:27rem;
-		margin:50% auto;
+		margin:45% auto;
 	}
 	.lock-num-ul li{
 		width:8rem;
