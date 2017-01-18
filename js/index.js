@@ -24,7 +24,7 @@
 	for (var i = 0; i < li.length; i++) {
 		li[i].index=i;
 		var psd=new Array();
-		li[i].ontouchend=function(){
+		li[i].onclick=function(){
 			psd.push(li[this.index].innerHTML);
 			psd=psd.splice(0,4)
 				input[0].value=psd[0];
@@ -59,7 +59,7 @@
 			}
 		}
 		var del=document.querySelector('.del');
-			del.ontouchend=function(){
+			del.onclick=function(){
 				if (psd.length) {
 					psd.splice(psd.length-1,1)	
 					if (psd[0]) {
