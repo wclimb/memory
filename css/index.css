@@ -1,0 +1,506 @@
+/*------------全局样式------------*/
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,span,a,
+input,textarea,p,blockquote,th,td,header,nav,footer,article,
+section,aside,time,figure,img,div{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0)}
+h1,h2,h3,h4,h5,h6{font-weight:normal}
+ul{list-style:none}
+legend{display:none}
+fieldset,img{border:none;vertical-align:middle}
+em,cite,i{font-style:normal}
+input,button,textarea{outline:none;border:0;vertical-align:middle;border:0;font-family:Arial}
+input[type="submit"],input[type="reset"],input[type="button"],button {-webkit-appearance:none;border-radius:0}
+select{-webkit-appearance:none;-moz-appearance:none;appearance:none}
+textarea{resize:none}
+html{height:100%;}
+body a:hover,body a:active,body a:focus{text-decoration:none;outline:none}
+html{
+	font-size: 62.5%;-webkit-text-size-adjust:none;overflow:hidden;
+}
+body{
+	width: 100%;
+	height: 100%;
+}
+#main{
+	background: #202125;
+	width: 100%;
+	height: 100%;
+}
+.page1{
+	width: 100%;
+	height: 100%;
+	background: #202125;
+	color: #fff;
+}
+.page1 .time{
+	position: absolute;
+	top:1rem;
+	left: 50%;
+	margin-left: -9rem;
+	text-align: center;
+}
+.page1 .time .time-clock{
+	font-size: 9rem;
+	font-family: 'HelveticaNeue';
+}
+.page1 .clock-hours{
+	position: relative;
+}
+.page1 .clock-hours:after{
+	content: '.';
+	position: absolute;
+	font-size: 4rem;
+	right: -2rem;
+	width: 1rem;
+	height: 1rem;
+}
+.page1 .clock-hours:before{
+	content: '.';
+	position: absolute;
+	font-size: 4rem;
+	right: -2rem;
+	top: 2.5rem;
+	width: 1rem;
+	height: 1rem;
+}
+.page1 .time .time-date{
+	font-size: 1.6rem;
+	font-weight: 500;
+	font-family: Arial,Helvetica,sans-serif;
+	letter-spacing: ;
+}
+.page1-footer{
+	width: 100%;
+	height: 6rem;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	opacity: 0.5;
+}
+.page1-footer .page1-footer-lock{
+	position: relative;
+	width: 12rem;
+	font-size: 2.3rem;
+	margin: 0 auto;
+	padding-left: 1rem;
+	animation: footer-lock 1.5s infinite;
+}
+@keyframes  footer-lock{
+	from{
+		opacity: 0.4;
+	}
+	to{
+		opacity: 1;
+	}
+}
+.page1-footer .page1-footer-lock:before{
+	position: absolute;
+	content: '>';
+	left: 0;
+}
+.page1-footer-icon span{
+	position: relative;
+	bottom: 0.6rem;
+	display: inline-block;
+	width: 3.5rem;
+	height: 0.7rem;
+	background: #fff;
+	border-radius: 10px;
+	margin-top: 2.5rem;
+}
+.page1-footer-icon i{
+	display: inline-block;
+	transform: scale(1.2);
+	position: absolute;
+	right:0.2rem;
+	bottom: 0.6rem;
+	width: 2.5rem;
+	height: 1.9rem;
+	background: url(../images/camera.png) no-repeat ;
+}
+.wx-msg {
+	position: absolute;
+	top: 30%;
+	left:0;
+	width: 100%;
+}
+.wx-msg i{
+	display: inline-block;
+	position: absolute;
+	top:0.8rem;
+	left:0rem;
+	width: 2rem;
+	height: 2rem;
+	background: url(../images/wx.png) no-repeat;
+	margin-left: 1.6rem;
+}
+.wx-msg ul li{
+	border-top: 0.2rem solid #2B2C30;
+	position: relative;
+	height: 7rem;
+}
+.wx-msg ul li div {
+	display: inline-block;
+	margin: 0.4rem 0 0 4.5rem;
+	height: 7rem;
+	font-family: Helvetica;
+}
+.wx-msg ul li div p{
+	font-size: 1.8rem;
+	margin-top: 0.25rem;
+	opacity: 0.8;
+	font-weight: ;
+}
+.wx-msg-op{
+	font-size: 1.1rem !important;
+	opacity: 0.6 !important;
+	margin-top: 0.6rem !important;
+}
+.wx-msg ul{
+	overflow: hidden;
+}
+.wx-msg ul li + li{
+	height: 5.3rem;
+	opacity: 0.6 ;
+}
+.wx-msg ul li + li i{
+	transform: scale(0.9);
+}
+.wx-msg ul li + li p{
+	font-size: 1.5rem;
+	margin-top: 0.4rem;
+}
+.wx-msg .wx-now{
+	position: relative;
+}
+.wx-msg .wx-now:after{
+	position: absolute;
+	content: '现在';
+	opacity:0.5;
+	font-size: 1.2rem;
+	top: 0.4rem;
+	padding-left: 0.4rem
+}
+
+/*--------解锁页面-----------*/
+.page1 .lock{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-100%);
+	background: #202125;
+	transition:all 0.5s;
+}
+/*-----密码框------*/
+.lock .lock-password{
+	position: absolute;
+	top:4.5rem;
+	left: 50%;
+	width: 24rem;
+	margin-left: -12rem;
+	text-align: center;
+}
+.lock .lock-password p{
+	font-size: 2.5rem;
+}
+.lock .lock-password div{
+	width: 16rem;
+	height: 3rem;
+	margin: 2rem auto;
+	opacity: .9;
+}
+.lock .lock-password input{
+	display: inline-block;
+	text-align: center;
+	line-height: 2.5rem;
+	font-size: 1.8rem;
+	width: 1.6rem;
+	height: 1.6rem;
+	border:1px solid #555559;
+	border-radius: 50%;
+	margin-left: 0.7rem;
+	background: #908c8c;
+}
+.lock-tips{
+	font-size: 1.6rem !important;
+	margin-top: -2rem;
+	opacity: 0.7;
+	
+}
+.lock-tips-move{
+	animation: move 0.5s ;
+}
+@keyframes move{
+	0% {transform:translateX(-0.8rem);}
+	20% {transform:translateX(0.8rem);}
+	30% {transform: translateX(-1.2rem);}
+	40% {transform: translateX(1.2rem);}
+	60% {transform: translateX(-1.5rem);}
+	80% {transform: translateX(1.5rem);}
+	100% {transform: translateX(0rem);}
+}
+
+/*-----九个数字------*/
+.lock-num{
+	position: absolute;
+	width: 90%;
+	height: 100%;
+	top: 25%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+}
+.lock-num ul{
+	
+
+}
+.lock-num ul li{
+	position: relative;
+	width:7rem;
+	height:7rem;
+	margin: 1rem;
+	border:1px solid #555559;
+	border-radius: 50%;
+	float: left;
+	line-height: 6rem;
+	text-align: center;
+	font-size:4rem ;
+	opacity: 0.7;
+}
+.lock-num ul li:after{
+	position: absolute;
+	bottom: -1.1rem;
+	left:2.4rem;
+	font-size: 1rem;
+	letter-spacing: 0.5rem;
+}
+.lock-num ul li:nth-of-type(2):after{
+	content: 'ABC';
+}
+.lock-num ul li:nth-of-type(3):after{
+	content: 'DEF';
+}
+.lock-num ul li:nth-of-type(4):after{
+	content: 'GHI';
+}
+.lock-num ul li:nth-of-type(5):after{
+	content: 'JKL';
+}
+.lock-num ul li:nth-of-type(6):after{
+	content: 'MNO';
+}
+.lock-num ul li:nth-of-type(7):after{
+	content: 'PQRS';
+	left:1.9rem;
+}
+.lock-num ul li:nth-of-type(8):after{
+	content: 'TUV';
+}
+.lock-num ul li:nth-of-type(9):after{
+	content: 'WSYZ';
+	left:1.9rem;
+}
+.lock-num ul li:last-child{
+	margin-left: 10.2rem;
+	line-height: 7rem;
+}
+
+.lock-2 span{
+	position: absolute;
+	font-size: 2rem;
+	color: #fff
+}
+.lock-2 span:nth-of-type(1){
+	bottom: 3rem;
+	left: 3.5rem;
+}
+.lock-2 span:nth-of-type(2){
+	bottom: 3rem;
+	right: 3.5rem;
+}
+.lock-num{
+	/*
+	width: 90%;
+	height: 100%;
+	top: 15%;
+	left:0;
+	transform: translateX(0);transform: scale(0.7);
+	*/
+}
+
+
+/*-----home主屏------*/
+
+.main-home{
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+	position: absolute;
+	left: 0;
+	right: 0;
+	transform: scale(0);
+	transition: all 0.4s;
+}
+
+@media screen and (min-width: 320px) and (max-width: 360px) {
+	.page1 .time{
+		margin-left: -7rem;
+	}
+	.page1 .time .time-date{
+		font-size: 1.5rem;
+	}
+	.page1 .time .time-clock{
+		font-size: 7rem ;
+	}
+	.wx-msg{
+		top:28%;
+	}
+	.wx-msg ul li{
+		height: 6rem;
+	}
+	.wx-msg ul li div {
+		height: 7rem;
+	}
+	.wx-msg ul li div p{
+		font-size: 1.4rem;
+	}
+	.wx-msg ul li + li{
+		height: 5rem;
+	}
+	.wx-msg ul li + li p{
+		font-size: 1.3rem;
+	}
+	.wx-msg .wx-now:after{
+		font-size: 1rem;
+	}
+	.page1-footer .page1-footer-lock:before{
+		left: 1rem;
+	}
+	.page1-footer-icon span{
+		height: 0.6rem;
+	}
+	.page1-footer-icon i{
+		transform: scale(1.1);
+	}
+	.page1-footer .page1-footer-lock{
+		font-size: 2rem;
+	}
+
+	/*--------解锁页面-----------*/
+	.lock .lock-password{
+		top:3.5rem;
+	}
+	.lock .lock-password p{
+		font-size: 2.4rem;
+	}
+	.lock .lock-password div{
+		height: 2rem;
+		margin: 1rem auto;
+	}
+	.lock .lock-password input{
+		font-size: 1.8rem;
+		width: 1.3rem;
+		height: 1.3rem;
+	}
+	.lock-tips{
+		font-size: 1.3rem !important;
+		margin-top: -0.7rem;
+		opacity: 0.7;
+	}
+	.lock-num{
+		width: 85%;
+	}
+	.lock-num ul li{
+		width:5.3rem;
+		height:5.3rem;
+		margin: 1rem;
+		line-height: 4.7rem;
+		font-size:4rem ;
+	}
+	.lock-num ul li:after{
+		font-size: 1rem;
+		bottom: -1.3rem;
+		left:1.4rem;
+		transform: scale(0.8);
+	}
+	.lock-num ul li:nth-of-type(7):after{
+		left:1rem;
+	}
+	.lock-num ul li:nth-of-type(9):after{
+		left:1rem;
+	}
+	.lock-num ul li:last-child{
+		transform: translateX(-28%);
+		line-height: 5.3rem;
+	}
+	.lock span{
+		font-size: 1.7rem;
+	}
+ }
+@media screen and (min-width: 360px) and (max-width: 374px){
+	.lock .lock-password{
+		top:4rem;
+	}
+	.lock .lock-password p{
+		font-size: 3rem;
+	}
+	.lock .lock-password div{
+		height: 2rem;
+		margin: 1.4rem auto;
+	}
+	.lock .lock-password input{
+		font-size: 2rem;
+		width: 1.6rem;
+		height: 1.6rem;
+	}
+	.lock-tips{
+		font-size: 1.5rem !important;
+		margin-top: -0.7rem;
+	}
+     .lock-num{
+		width: 82%;
+	}
+	.lock-num ul li{
+		width:6rem;
+		height:6rem;
+		line-height: 5.4rem;
+		font-size:5rem;
+	}
+	.lock-num ul li:after{
+		font-size: 1rem;
+		bottom: -1.5rem;
+		left:1.8rem;
+		transform: scale(0.8);
+	}
+	.lock-num ul li:nth-of-type(7):after{
+		left:1.2rem;
+	}
+	.lock-num ul li:nth-of-type(9):after{
+		left:1.2rem;
+	}
+	.lock-num ul li:last-child{
+		transform: translateX(-17%);
+		line-height: 6rem;
+	}
+	.lock span{
+		font-size: 2rem;
+	}
+
+}
+ 
+@media screen and (min-width: 400px) {
+    .lock-num{
+		width: 80%;
+	}
+}
+ 
+@media screen and (min-width: 440px) {
+   
+}
+ 
+@media screen and (min-width: 480px) {
+    
+}
+ 
+@media screen and (min-width: 640px) {
+   
+}
