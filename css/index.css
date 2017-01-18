@@ -33,12 +33,11 @@ body{
 }
 .page1 .time{
 	position: absolute;
-	top:1rem;
+	top:0.4rem;
 	left: 50%;
 	width: 90%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
-	margin-left: ;
 	text-align: center;
 }
 .page1 .time .time-clock{
@@ -99,6 +98,7 @@ body{
 .page1-footer .page1-footer-lock:before{
 	position: absolute;
 	content: '>';
+	padding-right: 1.3rem;
 	left: 0;
 }
 .page1-footer-icon span{
@@ -354,7 +354,7 @@ body{
 
 @media screen and (min-width: 320px) and (max-width: 360px) {
 	.page1 .time{
-		margin-left:;
+		
 	}
 	.page1 .time .time-date{
 		font-size: 1.5rem;
@@ -363,12 +363,12 @@ body{
 		font-size: 7rem ;
 	}
 	.page1 .clock-hours:after{
-		right: -1.7rem;
-		top: -1rem;
+		right: -1.2rem;
+		top: -0.6rem;
 	}
 	.page1 .clock-hours:before{
 		right: -1.7rem;
-		top: 1.5rem;
+		top: 1.2rem;
 	}
 	.wx-msg{
 		top:28%;
