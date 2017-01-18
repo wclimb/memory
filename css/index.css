@@ -83,7 +83,7 @@ body{
 	width: 12rem;
 	font-size: 2.3rem;
 	margin: 0.5rem auto 0 auto;
-	padding-left: 1rem;
+	padding-left: 1.3rem;
 	animation: footer-lock 1.5s infinite;
 	-webkit-animation: footer-lock 1.5s infinite;
 }
@@ -98,12 +98,11 @@ body{
 .page1-footer .page1-footer-lock:before{
 	position: absolute;
 	content: '>';
-	padding-right: 1.3rem;
-	left: 0;
+	left: -0.6rem;
 }
 .page1-footer-icon span{
 	position: relative;
-	bottom: 0.6rem;
+	bottom: 0.3rem;
 	display: inline-block;
 	width: 3.5rem;
 	height: 0.7rem;
@@ -156,9 +155,9 @@ body{
 	font-weight: ;
 }
 .wx-msg-op{
-	font-size: 1.1rem !important;
+	font-size: 1rem !important;
 	opacity: 0.6 !important;
-	margin-top: 0.3rem !important;
+	margin-top: 0.2rem !important;
 }
 .wx-msg ul{
 	overflow: hidden;
@@ -253,7 +252,7 @@ body{
 .lock-num{
 	position: absolute;
 	width: 90%;
-	top: 25%;
+	top: 26%;
 	left: 50%;
 	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
@@ -367,7 +366,7 @@ body{
 		top: -0.6rem;
 	}
 	.page1 .clock-hours:before{
-		right: -1.7rem;
+		right: -1.2rem;
 		top: 1.2rem;
 	}
 	.wx-msg{
@@ -406,15 +405,16 @@ body{
 	}
 
 	/*--------解锁页面-----------*/
+
 	.lock .lock-password{
-		top:3rem;
+		top:2.4rem;
 	}
 	.lock .lock-password p{
 		font-size: 2.4rem;
 	}
 	.lock .lock-password div{
 		height: 2rem;
-		margin: 1rem auto;
+		margin: 0.6rem auto;
 	}
 	.lock .lock-password input{
 		font-size: 1.3rem;
@@ -428,27 +428,27 @@ body{
 		opacity: 0.7;
 	}
 	.lock-num{
-		width: 85%;
+		width: 73%;
 	}
 	.lock-num ul li{
 		width:5.3rem;
 		height:5.3rem;
-		margin: 1rem;
+		margin: 0.6rem;
 		line-height: 4.7rem;
 		font-size:4rem ;
 	}
 	.lock-num ul li:after{
 		font-size: 1rem;
-		bottom: -1.3rem;
-		left:1.4rem;
-		transform: scale(0.8);
-		-webkit-transform: scale(0.8);
+		bottom: -1rem;
+		left:1.2rem;
+		transform: scale(0.7);
+		-webkit-transform: scale(0.7);
 	}
 	.lock-num ul li:nth-of-type(7):after{
-		left:1rem;
+		left:0.6rem;
 	}
 	.lock-num ul li:nth-of-type(9):after{
-		left:1rem;
+		left:0.6rem;
 	}
 	.lock-num ul li:last-child{
 		transform: translateX(-28%);
