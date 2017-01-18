@@ -250,18 +250,22 @@ body{
 
 /*-----九个数字------*/
 .lock-num-ul{
-	position: absolute;
+	/*position: absolute;
 	width: 79%;
 	top: 26%;
 	left: 50%;
 	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);*/
+	position: relative;
+	width: 24rem;
+	height: 24rem;
+	margin: 50% auto;
 }
 .lock-num-ul li{
 	position: relative;
 	width:7rem;
 	height: 7rem;
-	margin:0.6rem ;
+	margin:0.5rem ;
 	border:1px solid #555559;
 	border-radius: 50%;
 	box-sizing:border-box;
@@ -428,7 +432,9 @@ body{
 		opacity: 0.7;
 	}
 	.lock-num-ul{
-		width: 74%;
+		margin: 42% auto;
+		width: 19.5rem;
+		height: 19.5rem;
 	}
 	.lock-num-ul li{
 		width:5.3rem;
@@ -483,8 +489,8 @@ body{
 		width: 82%;
 	}
 	.lock-num-ul li{
-		width:6rem;
-		height:6rem;
+		width:7rem;
+		height:7rem;
 		line-height: 5.4rem;
 		font-size:5rem;
 	}
@@ -514,7 +520,15 @@ body{
  
 @media screen and (min-width: 400px) {
     .lock-num-ul{
-		width: 80%;
+		width:27rem; 
+		height:27rem;
+		margin:50% auto;
+	}
+	.lock-num-ul li{
+		width:8rem;
+		height:8rem;
+		line-height: 6.5rem;
+		font-size:6rem;
 	}
 }
  
