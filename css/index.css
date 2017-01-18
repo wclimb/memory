@@ -88,6 +88,14 @@ body{
 	animation: footer-lock 1.5s infinite;
 	-webkit-animation: footer-lock 1.5s infinite;
 }
+@keyframes  footer-lock{
+	from{
+		opacity: 0.4;
+	}
+	to{
+		opacity: 1;
+	}
+}
 -webkit-@keyframes  footer-lock{
 	from{
 		opacity: 0.4;
@@ -98,7 +106,7 @@ body{
 }
 .page1-footer .page1-footer-lock:before{
 	position: absolute;
-	content: '>';
+	content: '›';
 	transform: scale(1.2);
 	-webkit-transform: scale(1.2);
 	left: -0.6rem;
@@ -240,6 +248,15 @@ body{
 .lock-tips-move{
 	animation: move 0.5s ;
 	-webkit-animation: move 0.5s;
+}
+@keyframes move{
+	0% {transform:translateX(-0.8rem);-webkit-transform:translateX(-0.8rem);}
+	20% {transform:translateX(0.8rem);-webkit-transform:translateX(0.8rem);}
+	30% {transform: translateX(-1.2rem);-webkit-transform: translateX(-1.2rem);}
+	40% {transform: translateX(1.2rem);-webkit-transform: translateX(1.2rem);}
+	60% {transform: translateX(-1.5rem);-webkit-transform: translateX(-1.5rem);}
+	80% {transform: translateX(1.5rem);-webkit-transform: translateX(1.5rem);}
+	100% {transform: translateX(0rem);-webkit-transform: translateX(0rem);}
 }
 -webkit-@keyframes move{
 	0% {transform:translateX(-0.8rem);-webkit-transform:translateX(-0.8rem);}
