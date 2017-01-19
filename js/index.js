@@ -47,6 +47,7 @@
 					lock.style.display='none';
 					home.style.webkitTransform='scale(1)';
 					home.style.transform='scale(1)';
+
 					var homeSpan1=document.querySelector('.home-span1');
 					setInterval(function(){
 							homeSpan1.innerHTML++;
@@ -60,9 +61,11 @@
 							homeSpan3.innerHTML++;
 					
 					},1200)
+					
 					setTimeout(function(){
 						var homeMsg=document.querySelector('.home-show-msg');
 						homeMsg.style.transform='scale(1)';
+						homeMsg.style.webkitTransform='scale(1)';
 						
 						homeMsg.style.opacity=1;
 
@@ -77,6 +80,7 @@
 						homeMsgright.onclick=function(){
 							var wxPage=document.querySelector('.wx-page');
 							wxPage.style.transform='scale(1)'
+							wxPage.style.webkitTransform='scale(1)'
 						}
 					},3000)
 				},500)

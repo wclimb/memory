@@ -476,8 +476,10 @@ body{
 	left: 50%;
 	margin-left: -10rem;
 	transform: scale(0.7);
+	-webkit-transform: scale(0.7);
 	opacity: 0;
 	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .home-show-top{
 	height: 6rem;
@@ -529,7 +531,9 @@ body{
 	top: 0;
 	left: 0;
 	transform: scale(0);
+	-webkit-transform: scale(0);
 	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 /*------------媒体查询--------------*/
 
