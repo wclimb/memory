@@ -45,13 +45,14 @@ body{
 	text-align: center;
 }
 .page1 .time .time-clock{
+	position: relative;
 	font-size: 9rem;
 	font-family: 'HelveticaNeue';
 }
 .page1 .clock-hours{
-	position: relative;
+	position: ;
 }
-.page1 .clock-hours:after{
+/*.page1 .clock-hours:after{
 	content: '.';
 	position: absolute;
 	font-size: 4rem;
@@ -67,6 +68,12 @@ body{
 	top: 2.5rem;
 	width: 1rem;
 	height: 1rem;
+}*/
+.time-clock img{
+	display: inline-block;
+	position: absolute;
+	left: 48%;top: 30%;
+
 }
 .page1 .time .time-date{
 	font-size: 1.6rem;
@@ -498,7 +505,7 @@ body{
 .show-bot{
 	width: 20rem;
 	height: 4rem;
-	border-top: 0.2rem solid #929292;
+	border-top: 0.1rem solid #929292;
 	color: #59A1E0;
 	font-size: 1.8rem;
 	box-sizing:border-box;
@@ -513,7 +520,7 @@ body{
 .show-bot-left{
 	width: 10rem;
 	height:3.8rem ;
-	border-right: 0.3rem solid #929292;
+	border-right: 0.2rem solid #929292;
 	box-sizing:border-box;
 }
 .show-bot-right{
@@ -547,13 +554,16 @@ body{
 	.page1 .time .time-clock{
 		font-size: 7rem ;
 	}
-	.page1 .clock-hours:after{
+	/*.page1 .clock-hours:after{
 		right: -1.1rem;
 		top: -0.6rem;
 	}
 	.page1 .clock-hours:before{
 		right: -1.1rem;
 		top: 1.6rem;
+	}*/
+	.time-clock img{
+		height: 3rem;
 	}
 	.wx-msg{
 		top:28%;
@@ -646,6 +656,12 @@ body{
 	.lock span{
 		font-size: 1.7rem;
 	}
+
+	.main-home ul li{
+	
+		margin:0.4% 2.5%;
+
+	}
  }
 @media screen and (min-width: 360px) and (max-width: 374px){
 	.lock .lock-password{
@@ -698,7 +714,11 @@ body{
 	.lock span{
 		font-size: 2rem;
 	}
+	.main-home ul li{
+	
+	margin:3% 2.5%;
 
+	}
 }
  
 @media screen and (min-width: 400px) {
@@ -723,6 +743,12 @@ body{
 	}
 	.lock-num-ul li:nth-of-type(9):after{
 		left:2rem;
+	}
+
+	.main-home ul li{
+	
+		margin:3.2% 2.5%;
+	
 	}
 }
  
