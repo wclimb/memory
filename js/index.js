@@ -16,6 +16,7 @@
 			document.card.key4.focus();
 		}
 	}
+
 	var lockNum=document.querySelector('.lock-num-ul');
 	var li=lockNum.querySelectorAll('li');
 	var formPsd=document.getElementById('form-psd')
@@ -59,10 +60,13 @@
 					var homeSpan3=document.querySelector('.home-span3');
 					setInterval(function(){
 							homeSpan3.innerHTML++;
-					
 					},1200)
 					
 					setTimeout(function(){
+
+						var dx=document.querySelector('#dxmusic');
+						dx.play()
+
 						var homeMsg=document.querySelector('.home-show-msg');
 						homeMsg.style.transform='scale(1)';
 						homeMsg.style.webkitTransform='scale(1)';
@@ -74,6 +78,7 @@
 						homeMsgLeft.onclick=function(){
 							homeMsg.style.display='none';
 							setTimeout(function(){
+								dx.play()
 								homeMsg.style.display='block';
 							},1000)
 						}

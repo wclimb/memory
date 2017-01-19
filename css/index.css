@@ -471,6 +471,7 @@ body{
 }
 .home-bot img{
 	width: 100%;
+	height: 90%;
 }
 
 .home-show-msg{
@@ -638,7 +639,7 @@ body{
 	.lock-num-ul li:after{
 		font-size: 1rem;
 		bottom: -1.5rem;
-		left:1.2rem;
+		left:1rem;
 		transform: scale(0.7);
 		-webkit-transform: scale(0.7);
 	}
@@ -656,10 +657,12 @@ body{
 	.lock span{
 		font-size: 1.7rem;
 	}
-
+	.main-home ul{
+		margin-top: 0.5rem;
+	}
 	.main-home ul li{
 	
-		margin:0.4% 2.5%;
+		margin:0.7% 2.5%;
 
 	}
  }
