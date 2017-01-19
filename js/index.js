@@ -84,8 +84,22 @@
 						}
 						homeMsgright.onclick=function(){
 							var wxPage=document.querySelector('.wx-page');
-							wxPage.style.transform='scale(1)'
-							wxPage.style.webkitTransform='scale(1)'
+							wxPage.style.transform='scale(1)';
+							wxPage.style.webkitTransform='scale(1)';
+							homeMsg.style.transform='scale(0)';
+							homeMsg.style.webkitTransform='scale(0)';
+							setTimeout(function(){
+								dx.play()
+								var msg2=document.querySelector('.msg-2')
+								
+								homeMsgright.innerHTML='确认';
+								msg2.innerHTML='你将退出微信';
+								homeMsg.style.transform='scale(1)';
+								homeMsg.style.webkitTransform='scale(1)';
+								homeMsgright.onclick=function(){
+									homeMsg.style.display='none'
+								}
+							},1000)
 						}
 					},3000)
 				},500)

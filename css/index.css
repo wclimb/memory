@@ -488,6 +488,7 @@ body{
 	opacity: 0;
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
+	z-index: 11111;
 }
 .home-show-top{
 	height: 6rem;
@@ -534,7 +535,7 @@ body{
 .wx-page{
 	width: 100%;
 	height: 100%;
-	background: #ccc;
+	background: #F5F5F5;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -543,6 +544,89 @@ body{
 	transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+.wx-top{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 111;
+}
+.wx-input{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 111;
+}
+.wx-top,.wx-input{
+	width: 100%
+}
+.wx-top img,.wx-input img{
+	width: 100%;
+}
+.wx-content{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50%;
+	top: ;
+	z-index: 11;
+}
+.wx-content ul li{
+	width: 15rem;
+	height: 5rem;
+	margin: 0.8rem;
+}
+.wx-content ul li div{
+	float: left;
+	margin: 0 0 0 1rem;
+}
+.wx-content ul li img{
+	width: 3.7rem;float: left;
+	height: 3.7rem;
+}
+.wx-content ul li h3{
+	color: #6A6A6A;
+	font-size: 1.4rem;
+}
+.wx-content ul li p{
+	margin-top: 0.5rem;
+	font-size: 1.7rem;
+	color: #000;
+	height: 3rem;
+	width: 10rem;
+	text-align: center;
+	line-height: 3rem;
+	background: #fff;
+	border-radius: 0.5rem;
+	border:1px solid #DBDBDB;
+	position: relative;
+}
+.wx-content ul li p:before{
+	position: absolute;
+	content: '';
+	 width: 0;
+  	height: 0;
+  	border-top:0.5rem solid transparent;
+  	border-bottom:0.5rem solid transparent;
+ 	border-right: 0.8rem solid #DBDBDB;
+ 	display: block;
+	left:-0.8rem;
+	top: 1rem;
+}
+.wx-content ul li p:after{
+	position: absolute;
+	content: '';
+	 width: 0;
+  	height: 0;
+  	border-top:0.5rem solid transparent;
+  	border-bottom:0.5rem solid transparent;
+ 	border-right: 0.8rem solid #fff;
+ 	display: block;
+	left:-0.7rem;
+	top: 1rem;
+}
+
+
+
 /*------------媒体查询--------------*/
 
 @media screen and (min-width: 320px) and (max-width: 359px) {
@@ -658,11 +742,11 @@ body{
 		font-size: 1.7rem;
 	}
 	.main-home ul{
-		margin-top: 0.5rem;
+		margin-top: 0.8rem;
 	}
 	.main-home ul li{
 	
-		margin:0.7% 2.5%;
+		margin:1.3% 2.5%;
 
 	}
  }
