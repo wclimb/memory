@@ -33,7 +33,7 @@ body{
 	color: #fff;
 }
 #show-1{
-	display:none;
+	display:;
 }
 .page1 .time{
 	position: absolute;
@@ -207,8 +207,8 @@ body{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	/*transform: translateX(-100%);
-	-webkit-transform: translateX(-100%);*/
+	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
 	background: #202125;
 	transition:all 0.5s;
 	-webkit-transition:all 0.5s;
@@ -274,12 +274,6 @@ body{
 
 /*-----九个数字------*/
 .lock-num-ul{
-	/*position: absolute;
-	width: 79%;
-	top: 26%;
-	left: 50%;
-	transform: translateX(-50%);
-	-webkit-transform: translateX(-50%);*/
 	position: relative;
 	width: 24rem;
 	height: 24rem;
@@ -369,15 +363,175 @@ body{
 .main-home{
 	width: 100%;
 	height: 100%;
-	background: #ccc;
+	background: #191919;
 	position: absolute;
 	left: 0;
-	right: 0;
+	top: 0;
 	transform: scale(0);
 	-webkit-transform: scale(0);
 	transition: all 0.4s;
 	-webkit-transition: all 0.4s;
 }
+.main-home ul{
+	width: 100%;
+	height: 60%;
+	margin-top: 1rem;
+}
+.main-home ul li{
+	float: left;
+	width: 20%;
+	height: 8rem;
+	margin:2.5%;
+	position: relative;
+}
+.main-home ul li span{
+	position: absolute;
+	right: -1rem;
+	top: -0.7rem;
+	display: block;
+	width: 2.8rem;
+	height: 1.8rem;
+	background: #f6242d;
+	border-radius: 2rem;
+	text-align: center;
+	line-height: 1.8rem;
+	color: #fff;
+	font-size: 1.6rem;
+	
+}
+.main-home ul li .home-span1{
+	animation: home-span1  1s infinite;
+	-webkit-animation: home-span1  1s infinite;
+}
+.main-home ul li .home-span2{
+	animation: home-span1  0.8s infinite;
+	-webkit-animation: home-span1  0.8s infinite;
+}
+.main-home ul li .home-span3{
+	animation: home-span1  1.2s infinite;
+	-webkit-animation: home-span1  1.2s infinite;
+}
+@keyframes home-span1{
+	form{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+	to{
+		transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+	}
+}
+@-webkit-keyframes home-span1{
+	form{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+	}
+	to{
+		transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+	}
+}
+
+.main-home{
+	width: 100%;
+	height: 100%;
+}
+.main-home ul li img{
+	width: 100%;
+}
+.main-home .home-four{
+	width: 8rem;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+}
+.main-home .home-four span{
+	display: inline-block;
+	float: left;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: #626564;
+	margin-left: 1rem;
+	border-radius: 50%;
+	
+}
+.main-home .home-four .home-four-active{
+	background: #fff;
+}
+.home-bot {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+.home-bot img{
+	width: 100%;
+}
+
+.home-show-msg{
+	width: 20rem;
+	height: 10rem;
+	background: #fff;
+	border-radius: 0.3rem;
+	position: absolute;
+	top:35%;
+	left: 50%;
+	margin-left: -10rem;
+	transform: scale(0.7);
+	opacity: 0;
+	transition: all 0.5s;
+}
+.home-show-top{
+	height: 6rem;
+	color: #000;
+	text-align: center;
+}
+.home-show-top h3{
+	padding-top: 1.2rem;
+	font-size: 2.2rem;
+	
+}
+.home-show-top p{
+	font-size: 1.2rem;
+	padding-top: 0.4rem;
+}
+.show-bot{
+	width: 20rem;
+	height: 4rem;
+	border-top: 0.2rem solid #929292;
+	color: #59A1E0;
+	font-size: 1.8rem;
+	box-sizing:border-box;
+}
+.show-bot div{
+	float: left;
+	width: 10rem
+	height:3.9rem ;
+	text-align: center;
+	line-height: 4rem;
+}
+.show-bot-left{
+	width: 10rem;
+	height:3.8rem ;
+	border-right: 0.3rem solid #929292;
+	box-sizing:border-box;
+}
+.show-bot-right{
+	width: 10rem;
+	height:3.8rem ;
+	text-align: center;
+}
+
+/*--------微信聊天页面--------*/
+.wx-page{
+	width: 100%;
+	height: 100%;
+	background: #ccc;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: scale(0);
+	transition: all 0.5s;
+}
+/*------------媒体查询--------------*/
 
 @media screen and (min-width: 320px) and (max-width: 359px) {
 	.page1 .time{
@@ -470,15 +624,15 @@ body{
 	.lock-num-ul li:after{
 		font-size: 1rem;
 		bottom: -1.5rem;
-		left:1rem;
+		left:1.2rem;
 		transform: scale(0.7);
 		-webkit-transform: scale(0.7);
 	}
 	.lock-num-ul li:nth-of-type(7):after{
-		left:0.3rem;
+		left:0.5rem;
 	}
 	.lock-num-ul li:nth-of-type(9):after{
-		left:0.3rem;
+		left:0.5rem;
 	}
 	.lock-num-ul li:last-child{
 		transform: translateX(-58%);
