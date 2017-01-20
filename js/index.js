@@ -16,7 +16,34 @@
 	};
 
 	window.onload=function(){
+		var clockHours=document.querySelector('.clock-hours');
+		var clockMinutes=document.querySelector('.clock-minutes');
+		var clockMonth=document.querySelector('.month');
+		var clockDay=document.querySelector('.day');
+		var clockXq=document.querySelector('.xq');
+		var date=new Date();
 
+		var h=date.getHours();
+		if (h<10) {
+			return '0'+h;
+		}
+		clockHours.innerHTML=h;
+
+		var m=date.getMinutes();
+		if (m<10) {
+			return '0'+m;
+		}
+		clockMinutes.innerHTML=m;
+
+		var month1=date.getMonth()+1;
+		clockMonth.innerHTML=month1;
+
+		var day=date.getDate();
+		clockDay.innerHTML=day;
+
+		var xq=date.getDay();
+		var arrXq=['日','一','二','三','四','五','六']
+		clockXq.innerHTML=arrXq[xq]
 
 		function key1_touchend(){
 			if (document.card.key1.value.length==1) {

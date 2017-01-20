@@ -41,6 +41,7 @@ body{
 	left: 50%;
 	top: 50%;
 	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
 }
 #main{
 	background: #202125;
