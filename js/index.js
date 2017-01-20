@@ -1,4 +1,5 @@
 window.onload=function(){
+
 		function key1_touchend(){
 			if (document.card.key1.value.length==1) {
 				document.card.key2.focus();
@@ -14,7 +15,9 @@ window.onload=function(){
 				document.card.key4.focus();
 			}
 		}
-
+		
+		var dx=document.querySelector('#dxmusic');
+		dx.play();
 		var lockNum=document.querySelector('.lock-num-ul');
 		var li=lockNum.querySelectorAll('li');
 		var formPsd=document.getElementById('form-psd')
@@ -23,7 +26,9 @@ window.onload=function(){
 		for (var i = 0; i < li.length; i++) {
 			li[i].index=i;
 			var psd=new Array();
+			
 			li[i].onclick=function(){
+				
 				psd.push(li[this.index].innerHTML);
 				psd=psd.splice(0,4)
 					input[0].value=psd[0];
@@ -62,7 +67,7 @@ window.onload=function(){
 						
 						setTimeout(function(){
 
-							var dx=document.querySelector('#dxmusic');
+							
 							dx.play()
 
 							var homeMsg=document.querySelector('.home-show-msg');
@@ -130,7 +135,7 @@ window.onload=function(){
 											var images1=document.querySelector('.images1')
 											images1.style.display='block';
 											images1.className+=" m1"
-										},1000)
+										},600)
 										setTimeout(function(){
 											var images2=document.querySelector('.images2')
 											images2.style.display='block';
