@@ -45,7 +45,7 @@
 			li[i].index=i;
 			var psd=new Array();
 			
-			li[i].onclick=function(){
+			li[i].ontouchend=function(){
 				
 				psd.push(li[this.index].innerHTML);
 				psd=psd.splice(0,4)
@@ -96,14 +96,14 @@
 
 							var homeMsgLeft=document.querySelector('.show-bot-left');
 							var homeMsgright=document.querySelector('.show-bot-right');
-							homeMsgLeft.onclick=function(){
+							homeMsgLeft.ontouchend=function(){
 								homeMsg.style.display='none';
 								setTimeout(function(){
 									dx.play()
 									homeMsg.style.display='block';
 								},1000)
 							}
-							homeMsgright.onclick=function(){
+							homeMsgright.ontouchend=function(){
 								var wxPage=document.querySelector('.wx-page');
 								wxPage.style.transform='scale(1)';
 								wxPage.style.webkitTransform='scale(1)';
@@ -140,7 +140,7 @@
 									msg2.innerHTML='你将退出微信';
 									homeMsg.style.transform='scale(1)';
 									homeMsg.style.webkitTransform='scale(1)';
-									homeMsgright.onclick=function(){
+									homeMsgright.ontouchend=function(){
 										homeMsg.style.display='none';
 										wxPage.style.display='none';
 
@@ -223,7 +223,7 @@
 				}
 			}
 			var del=document.querySelector('.del');
-				del.onclick=function(){
+				del.ontouchend=function(){
 					if (psd.length) {
 						psd.splice(psd.length-1,1)	
 						if (psd[0]) {

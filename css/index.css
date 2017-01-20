@@ -20,6 +20,7 @@ body{
 	width: 100%;
 	height: 100%;
 	background: #202125;
+
 }
 #loadingDiv{
 	width: 100%;
@@ -46,6 +47,7 @@ body{
 	width: 100%;
 	height: 100%;
 	z-index: 111;
+	position: relative;
 }
 .page1{
 	width: 100%;
@@ -655,7 +657,7 @@ body{
 .wx-content ul li{
 	width: 28rem;
 	height: 5rem;
-	margin: 1.1rem 0.8rem;
+	margin: 1.4rem 0.8rem;
 }
 
 .wx-content ul li div{
