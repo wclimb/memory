@@ -224,6 +224,7 @@ body{
 	position: absolute;
 	content: '现在';
 	opacity:0.5;
+	width: 3rem;
 	font-size: 1.2rem;
 	top: 0.4rem;
 	padding-left: 0.4rem
@@ -1344,10 +1345,10 @@ body{
 		margin:1.5rem auto;
 	}
 	.end div{
-		width: 24rem;
+		width: 27rem;
 		margin:3rem auto;
 		text-align: left;
-		font-size: 1.6rem;
+		font-size: 1.5rem;
 	}
 	.end div p{
 		margin: 2rem 0;
