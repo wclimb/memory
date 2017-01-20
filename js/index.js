@@ -28,7 +28,7 @@
 			return '0'+h;
 		}
 		clockHours.innerHTML=h;
-
+		
 		var m=date.getMinutes();
 		if (m<10) {
 			return '0'+m;
@@ -43,7 +43,7 @@
 
 		var xq=date.getDay();
 		var arrXq=['日','一','二','三','四','五','六']
-		clockXq.innerHTML=arrXq[xq]
+		clockXq.innerHTML=arrXq[xq];
 
 		function key1_touchend(){
 			if (document.card.key1.value.length==1) {
