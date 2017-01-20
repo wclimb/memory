@@ -21,10 +21,31 @@ body{
 	height: 100%;
 	background: #202125;
 }
+#loadingDiv{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 111111;
+	background: #202125;
+	position: absolute;
+	line-height: 100%;
+	left: 0;
+	top: 0;
+	font-size: 2rem;
+	color: #fff;
+}
+#loadingDiv p{
+	position: absolute;
+	width: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%);
+}
 #main{
 	background: #202125;
 	width: 100%;
 	height: 100%;
+	z-index: 111;
 }
 .page1{
 	width: 100%;
@@ -225,12 +246,14 @@ body{
 	position: absolute;
 	top:4.5rem;
 	left: 50%;
-	width: 24rem;
-	margin-left: -12rem;
+	width: 100%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
 	text-align: center;
 }
 .lock .lock-password p{
 	font-size: 2.5rem;
+	text-align: center;
 }
 .lock .lock-password div{
 	width: 16rem;
@@ -593,7 +616,7 @@ body{
 		-webkit-transform: translateY(-18rem);transform: translateY(-18rem);
 	}
 	60%{
-		-webkit-transform: translateY(-24rem);
+		-webkit-transform: translateY(-24rem);transform: translateY(-24rem);
 	}
 	80%{
 		-webkit-transform: translateY(-24rem);transform: translateY(-24rem);
@@ -602,7 +625,7 @@ body{
 		-webkit-transform: translateY(-30rem);transform: translateY(-30rem);
 	}
 	100%{
-		-webkit-transform: translateY(-49rem);transform: translateY(-49rem);
+		-webkit-transform: translateY(-53rem);transform: translateY(-53rem);
 	}
 }
 @-webkit-keyframes wx-cnt{
@@ -616,7 +639,7 @@ body{
 		-webkit-transform: translateY(-18rem);transform: translateY(-18rem);
 	}
 	60%{
-		-webkit-transform: translateY(-24rem);
+		-webkit-transform: translateY(-24rem);transform: translateY(-24rem);
 	}
 	80%{
 		-webkit-transform: translateY(-24rem);transform: translateY(-24rem);
@@ -625,13 +648,13 @@ body{
 		-webkit-transform: translateY(-30rem);transform: translateY(-30rem);
 	}
 	100%{
-		-webkit-transform: translateY(-49rem);transform: translateY(-49rem);
+		-webkit-transform: translateY(-53rem);transform: translateY(-53rem);
 	}
 }
 .wx-content ul li{
-	width: 25rem;
+	width: 28rem;
 	height: 5rem;
-	margin: 0.8rem;
+	margin: 1.1rem 0.8rem;
 }
 
 .wx-content ul li div{
@@ -664,13 +687,13 @@ body{
 	width: 10rem;
 }
 .wx-content ul li:nth-of-type(3) div p{
-	width: 19rem;
+	width: 21rem;
 }
 .wx-content ul li:nth-of-type(5) div p{
-	width: 17rem;
+	width: 19rem;
 }
 .wx-content ul li:nth-of-type(6) div p{
-	width: 16rem;
+	width: 18rem;
 }
 .wx-content ul li:nth-of-type(7) div p{
 	width: 10rem;
@@ -1171,8 +1194,8 @@ body{
 	background: #202125;
 	transform: scale(0);
 	-webkit-transform: scale(0);
-	transition: all 0.4s;
-	-webkit-transition: all 0.4s;
+	transition: all 0.8s;
+	-webkit-transition: all 0.8s;
 }
 .end h2{
 	width: 100%;
@@ -1181,7 +1204,7 @@ body{
 	margin:3rem auto;
 }
 .end div{
-	width: 26.7rem;
+	width: 29rem;
 	margin: 6rem auto;
 	text-align: left;
 	font-size: 2rem;

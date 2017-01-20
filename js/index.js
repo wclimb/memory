@@ -1,4 +1,22 @@
-window.onload=function(){
+	
+
+	//呈现loading效果
+
+
+
+	//监听加载状态改变
+	document.onreadystatechange = completeLoading;
+
+	//加载状态为complete时移除loading效果
+	function completeLoading() {
+	    if (document.readyState == "complete") {
+	        var loadingMask = document.getElementById('loadingDiv');
+	        loadingMask.parentNode.removeChild(loadingMask);
+	    }
+	};
+
+	window.onload=function(){
+
 
 		function key1_touchend(){
 			if (document.card.key1.value.length==1) {
@@ -15,7 +33,7 @@ window.onload=function(){
 				document.card.key4.focus();
 			}
 		}
-		
+
 		var dx=document.querySelector('#dxmusic');
 		dx.play();
 		var lockNum=document.querySelector('.lock-num-ul');
