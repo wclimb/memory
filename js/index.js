@@ -1,12 +1,6 @@
 	
-
-	//呈现loading效果
-
-
-
 	//监听加载状态改变
 	document.onreadystatechange = completeLoading;
-
 	//加载状态为complete时移除loading效果
 	function completeLoading() {
 	    if (document.readyState == "complete") {
@@ -16,6 +10,8 @@
 	};
 
 	window.onload=function(){
+
+		//获取日期
 		var clockHours=document.querySelector('.clock-hours');
 		var clockMinutes=document.querySelector('.clock-minutes');
 		var clockMonth=document.querySelector('.month');
@@ -45,6 +41,7 @@
 		var arrXq=['日','一','二','三','四','五','六']
 		clockXq.innerHTML=arrXq[xq];
 
+		//四个输入框跳转
 		function key1_touchend(){
 			if (document.card.key1.value.length==1) {
 				document.card.key2.focus();
@@ -61,6 +58,8 @@
 			}
 		}
 
+
+		//密码输入判断
 		var dx=document.querySelector('#dxmusic');
 		dx.play();
 		var lockNum=document.querySelector('.lock-num-ul');
@@ -72,9 +71,10 @@
 			li[i].index=i;
 			var psd=new Array();
 			
-			li[i].ontouchend=function(){
+			li[i].onclick=function(){
 				
 				psd.push(li[this.index].innerHTML);
+				//只能输入四个，截取4个数字
 				psd=psd.splice(0,4)
 					input[0].value=psd[0];
 					if (psd[1]) {
@@ -90,6 +90,8 @@
 				if (psd.length==4&&psd[0]==1&&psd[1]==3&&psd[2]==0&&psd[3]==2) {
 					console.log('解锁');
 					tips.innerHTML='密码正确';
+
+					//输入正确弹出主页
 					setTimeout(function(){
 						var home=document.querySelector('.main-home');
 						var lock=document.querySelector('.lock');
@@ -97,6 +99,7 @@
 						home.style.webkitTransform='scale(1)';
 						home.style.transform='scale(1)';
 
+						//软件右上角数字增加+1
 						var homeSpan1=document.querySelector('.home-span1');
 						setInterval(function(){
 								homeSpan1.innerHTML++;
@@ -112,7 +115,7 @@
 						
 						setTimeout(function(){
 
-							
+							//微信消息提示框出现
 							dx.play()
 
 							var homeMsg=document.querySelector('.home-show-msg');
@@ -123,14 +126,16 @@
 
 							var homeMsgLeft=document.querySelector('.show-bot-left');
 							var homeMsgright=document.querySelector('.show-bot-right');
-							homeMsgLeft.ontouchend=function(){
+							homeMsgLeft.onclick=function(){
 								homeMsg.style.display='none';
 								setTimeout(function(){
 									dx.play()
 									homeMsg.style.display='block';
 								},1000)
 							}
-							homeMsgright.ontouchend=function(){
+
+							//点击打开弹出微信聊天框
+							homeMsgright.onclick=function(){
 								var wxPage=document.querySelector('.wx-page');
 								wxPage.style.transform='scale(1)';
 								wxPage.style.webkitTransform='scale(1)';
@@ -159,6 +164,7 @@
 								},4000)
 								wxCnt.className+=' wx-content-move';
 								
+								//退出微信提示，并弹出图片展示页面
 								setTimeout(function(){
 									dx.play()
 									var msg2=document.querySelector('.msg-2')
@@ -167,7 +173,7 @@
 									msg2.innerHTML='你将退出微信';
 									homeMsg.style.transform='scale(1)';
 									homeMsg.style.webkitTransform='scale(1)';
-									homeMsgright.ontouchend=function(){
+									homeMsgright.onclick=function(){
 										homeMsg.style.display='none';
 										wxPage.style.display='none';
 
@@ -206,7 +212,13 @@
 											images6.style.display='block';
 											images6.className+=" m6"
 										},23500)
+										setTimeout(function(){
+											var images6=document.querySelector('.images7')
+											images6.style.display='block';
+											images6.className+=" m7"
+										},28000)
 
+										//图片展示完之后弹出end页面
 										setTimeout(function(){
 
 											showImg.style.transform='scale(0)';
@@ -232,13 +244,14 @@
 													clearInterval(timer)
 												}
 											},150)
-										},28000)
+										},34000)
 									}
 								},6000)
 							}
 						},3000)
 					},500)
 				}
+				//密码错误提示
 				else if(psd.length==4){
 					if (psd!=[1,3,0,2]) {
 						tips.innerHTML='密码错误';
@@ -249,8 +262,9 @@
 					}
 				}
 			}
+			//密码删除控制，并把输入框的underfind问题处理
 			var del=document.querySelector('.del');
-				del.ontouchend=function(){
+				del.onclick=function(){
 					if (psd.length) {
 						psd.splice(psd.length-1,1)	
 						if (psd[0]) {
@@ -327,6 +341,7 @@
 	              switch(direction) {  
 	                  case 0:  
 	                      //alert("没滑动");  
+
 	                      break;  
 	                  case 1:  
 	                     // alert("向上");  
