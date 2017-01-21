@@ -1297,7 +1297,7 @@ body{
 		opacity: 1;
 	}
 	100%{
-		-webkit-transform:translate(-10%,0) rotate(0deg)  scale(0.8);
+		-webkit-transform:translate(-55%,20%) rotate(0deg)  scale(0.8);
 		transform:translate(-55%,20%) rotate(0deg)  scale(0.8);
 		opacity: 1;
 	}
@@ -1328,7 +1328,7 @@ body{
 		opacity: 1;
 	}
 	100%{
-		-webkit-transform:translate(-10%,0) rotate(0deg)  scale(0.8);
+		-webkit-transform:translate(-55%,20%) rotate(0deg)  scale(0.8);
 		transform:translate(-55%,20%) rotate(0deg)  scale(0.8);
 		opacity: 1;
 	}
