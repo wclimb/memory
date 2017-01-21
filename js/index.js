@@ -71,7 +71,7 @@
 			li[i].index=i;
 			var psd=new Array();
 			
-			li[i].onclick=function(){
+			li[i].ontouchend=function(){
 				
 				psd.push(li[this.index].innerHTML);
 				//只能输入四个，截取4个数字
@@ -126,7 +126,7 @@
 
 							var homeMsgLeft=document.querySelector('.show-bot-left');
 							var homeMsgright=document.querySelector('.show-bot-right');
-							homeMsgLeft.onclick=function(){
+							homeMsgLeft.ontouchend=function(){
 								homeMsg.style.display='none';
 								setTimeout(function(){
 									dx.play()
@@ -135,7 +135,7 @@
 							}
 
 							//点击打开弹出微信聊天框
-							homeMsgright.onclick=function(){
+							homeMsgright.ontouchend=function(){
 								var wxPage=document.querySelector('.wx-page');
 								wxPage.style.transform='scale(1)';
 								wxPage.style.webkitTransform='scale(1)';
@@ -173,7 +173,7 @@
 									msg2.innerHTML='你将退出微信';
 									homeMsg.style.transform='scale(1)';
 									homeMsg.style.webkitTransform='scale(1)';
-									homeMsgright.onclick=function(){
+									homeMsgright.ontouchend=function(){
 										homeMsg.style.display='none';
 										wxPage.style.display='none';
 
@@ -264,7 +264,7 @@
 			}
 			//密码删除控制，并把输入框的underfind问题处理
 			var del=document.querySelector('.del');
-				del.onclick=function(){
+				del.ontouchend=function(){
 					if (psd.length) {
 						psd.splice(psd.length-1,1)	
 						if (psd[0]) {
