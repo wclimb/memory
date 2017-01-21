@@ -606,6 +606,7 @@ body{
 	height:3.9rem ;
 	text-align: center;
 	line-height: 4rem;
+	background: #fff;
 }
 .show-bot-left{
 	width: 10rem;
@@ -1477,7 +1478,7 @@ body{
 		margin:1.5rem auto;
 	}
 	.end div{
-		
+		width: 82%;
 		margin:3rem auto;
 		text-align: left;
 		font-size: 1.5rem;
@@ -1485,6 +1486,7 @@ body{
 	.end div p{
 		margin: 2rem 0;
 	}
+
  }
 @media screen and (min-width: 360px) and (max-width: 374px){
 	.lock .lock-password{
