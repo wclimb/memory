@@ -213,9 +213,9 @@
 											images6.className+=" m6";
 										},23500)
 										setTimeout(function(){
-											var images8=document.querySelector('.images8')
-											images8.style.display='block';
-											images8.className+=" m8";
+											var images7=document.querySelector('.images7');
+											images7.style.display='block';
+											images7.className+=" m7";
 										},28000)
 
 										//图片展示完之后弹出end页面
