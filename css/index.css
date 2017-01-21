@@ -1263,16 +1263,16 @@ body{
 	}
 
 }
-.m7{
+.m8{
 	-webkit-transform: translate(-50%,-300%) rotate(90deg) ;
 	transform: translate(-50%,-300%) rotate(90deg) ;
 	opacity: 0.6;
-	-webkit-animation:m7 4s;
-	animation:m7 4s;
+	-webkit-animation:m8 4s;
+	animation:m8 4s;
 	-webkit-animation-fill-mode:forwards;
 	animation-fill-mode:forwards;
 }
-@keyframes m7{
+@keyframes m8{
 	0%{
 		-webkit-transform:translate(-50%,-300%) rotate(90deg) scale(1) ;
 		transform:translate(-50%,-300%) rotate(90deg) scale(1) ;
@@ -1298,7 +1298,7 @@ body{
 
 }
 
-@-webkit-keyframes m7{
+@-webkit-keyframes m8{
 	0%{
 		-webkit-transform:translate(-50%,-300%) rotate(90deg) scale(1) ;
 		transform:translate(-50%,-300%) rotate(90deg) scale(1) ;

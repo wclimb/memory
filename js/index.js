@@ -71,7 +71,7 @@
 			li[i].index=i;
 			var psd=new Array();
 			
-			li[i].onclick=function(){
+			li[i].ontouchend=function(){
 				
 				psd.push(li[this.index].innerHTML);
 				//只能输入四个，截取4个数字
@@ -126,7 +126,7 @@
 
 							var homeMsgLeft=document.querySelector('.show-bot-left');
 							var homeMsgright=document.querySelector('.show-bot-right');
-							homeMsgLeft.onclick=function(){
+							homeMsgLeft.ontouchend=function(){
 								homeMsg.style.display='none';
 								setTimeout(function(){
 									dx.play()
@@ -135,7 +135,7 @@
 							}
 
 							//点击打开弹出微信聊天框
-							homeMsgright.onclick=function(){
+							homeMsgright.ontouchend=function(){
 								var wxPage=document.querySelector('.wx-page');
 								wxPage.style.transform='scale(1)';
 								wxPage.style.webkitTransform='scale(1)';
@@ -173,7 +173,7 @@
 									msg2.innerHTML='你将退出微信';
 									homeMsg.style.transform='scale(1)';
 									homeMsg.style.webkitTransform='scale(1)';
-									homeMsgright.onclick=function(){
+									homeMsgright.ontouchend=function(){
 										homeMsg.style.display='none';
 										wxPage.style.display='none';
 
@@ -205,17 +205,17 @@
 										setTimeout(function(){
 											var images5=document.querySelector('.images5')
 											images5.style.display='block';
-											images5.className+=" m5"
+											images5.className+=" m5";
 										},19000)
 										setTimeout(function(){
 											var images6=document.querySelector('.images6')
 											images6.style.display='block';
-											images6.className+=" m6"
+											images6.className+=" m6";
 										},23500)
 										setTimeout(function(){
-											var images7=document.querySelector('.images7')
-											images7.style.display='block';
-											images7.className+=" m7"
+											var images8=document.querySelector('.images8')
+											images8.style.display='block';
+											images8.className+=" m8";
 										},28000)
 
 										//图片展示完之后弹出end页面
@@ -264,7 +264,7 @@
 			}
 			//密码删除控制，并把输入框的underfind问题处理
 			var del=document.querySelector('.del');
-				del.onclick=function(){
+				del.ontouchend=function(){
 					if (psd.length) {
 						psd.splice(psd.length-1,1)	
 						if (psd[0]) {
