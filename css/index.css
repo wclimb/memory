@@ -1263,7 +1263,7 @@ body{
 	}
 
 }
-.m7{
+/*.m7{
 	-webkit-transform: translate(-50%,-300%) rotate(90deg);
 	transform: translate(-50%,-300%) rotate(90deg);
 	opacity: 0.6;
@@ -1322,8 +1322,77 @@ body{
 		opacity: 1;
 	}
 
+}*/
+.m7{
+	-webkit-transform: translate(-50%,300%) rotate(50deg);
+	transform: translate(-50%,300%) rotate(50deg);
+	opacity: 0.6;
+	-webkit-animation:m7 4s;
+	animation:m7 4s;
+	-webkit-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+}
+@keyframes m7{
+	10%{
+		-webkit-transform:translate(-50%,300%) rotate(40deg) scale(1);
+		transform:translate(-50%,300%) rotate(40deg) scale(1);
+		opacity: 0.6;
+	}
+	
+	40%{
+		-webkit-transform:translate(-50%,200%) rotate(30deg) scale(1);
+		transform:translate(-50%,200%) rotate(30deg) scale(1);
+		opacity: 0.6;
+	}
+	60%{
+		-webkit-transform:translate(-50%,50%) rotate(20deg) scale(1);
+		transform:translate(-50%,50%) rotate(20deg) scale(1);
+		opacity: 1;
+	}
+	
+	80%{
+		-webkit-transform:translate(-50%) rotate(0deg) scale(1.3);
+		transform:translate(-50%) rotate(0deg) scale(1.3);
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform:translate(-10%,0) rotate(0deg)  scale(0.8);
+		transform:translate(-10%,0) rotate(0deg)  scale(0.8);
+		opacity: 1;
+	}
+
 }
 
+@-webkit-keyframes m7{
+	10%{
+		-webkit-transform:translate(-50%,300%) rotate(40deg) scale(1);
+		transform:translate(-50%,300%) rotate(40deg) scale(1);
+		opacity: 0.6;
+	}
+	
+	40%{
+		-webkit-transform:translate(-50%,200%) rotate(30deg) scale(1);
+		transform:translate(-50%,200%) rotate(30deg) scale(1);
+		opacity: 0.6;
+	}
+	60%{
+		-webkit-transform:translate(-50%,50%) rotate(20deg) scale(1);
+		transform:translate(-50%,50%) rotate(20deg) scale(1);
+		opacity: 1;
+	}
+	
+	80%{
+		-webkit-transform:translate(-50%) rotate(0deg) scale(1.3);
+		transform:translate(-50%) rotate(0deg) scale(1.3);
+		opacity: 1;
+	}
+	100%{
+		-webkit-transform:translate(-10%,0) rotate(0deg)  scale(0.8);
+		transform:translate(-10%,0) rotate(0deg)  scale(0.8);
+		opacity: 1;
+	}
+
+}
 
 /*-------------寄语-------------------*/
 .end{
@@ -1345,7 +1414,7 @@ body{
 	margin:3rem auto;
 }
 .end div{
-	width: 90%;
+	width: 88%;
 	margin: 6rem auto;
 	text-align: left;
 	font-size: 2rem;
