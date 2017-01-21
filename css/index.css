@@ -38,11 +38,11 @@ body{
 	position: absolute;
 	width: 100%;
 	left: 50%;
-	top: 35%;
+	top: 45%;
 	transform: translate(-50%);
 	-webkit-transform: translate(-50%);
 }
-.loadEffect{
+/*.loadEffect{
     width: 10rem;
     height: 10rem;
     position: relative;
@@ -127,7 +127,7 @@ body{
     left: 1.4rem;
     -webkit-animation-delay:1.04s;
     animation-delay:1.04s;
-}
+}*/
 
 
 #main{
